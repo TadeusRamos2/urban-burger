@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Urban Burger | Hamburgueria Artesanal</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <nav class="container navbar">
+      <a href="#inicio" class="logo">
+        URBAN<span>BURGER</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+<section class="hero" id="inicio">
+  <div class="container hero-content">
+
+    <div class="hero-text">
+      <span class="hero-tag">🔥 HAMBÚRGUER ARTESANAL</span>
+
+      <h1>
+        O SABOR QUE
+        <span>CONQUISTA!</span>
+      </h1>
+
+      <p>
+        Hambúrgueres artesanais preparados com
+        ingredientes selecionados, muito sabor
+        e qualidade em cada mordida.
+      </p>
+
+      <a href="#cardapio" class="btn">
+        EXPLORAR CARDÁPIO
+      </a>
+    </div>
+
+    <div class="hero-image">
+      <img
+        src="assets/images/classic.jpg"
+        alt="Hambúrguer artesanal Urban Burger"
+      >
+    </div>
+
+  </div>
+</section>
+
+<section class="container" id="cardapio">
+
+  <h2>Nosso Cardápio</h2>
+
+  <p>Escolha seu hambúrguer favorito!</p>
+
+  
+  <div class="filtros">
+   <button class="filtro ativo" data-categoria="todos">
+    Todos
+   </button>
+
+   <button class="filtro" data-categoria="burger">
+    Hambúrgueres
+   </button>
+
+   <button class="filtro" data-categoria="acompanhamento">
+    Acompanhamentos
+   </button>
+
+   <button class="filtro" data-categoria="bebida">
+    Bebidas
+   </button>
+  </div>
+
+  <div id="products"></div>
+
+
+ <div class="carrinho">
+  <h2>Meu Carrinho 🛒</h2>
+
+  <div id="itens-carrinho">
+    <p>Seu carrinho está vazio.</p>
+  </div>
+
+  <div class="carrinho-total">
+    <span>Total:</span>
+    <strong id="total-carrinho">R$ 0,00</strong>
+  </div>
+
+  <button id="finalizar-pedido" class="btn" type="button">
+    Finalizar pelo WhatsApp
+  </button>
+ </div>
+
+</section>
+
+
+    <section class="container" id="sobre">
+      <h2>Sobre nós</h2>
+      <p>
+        Uma hamburgueria criada para quem
+        valoriza sabor e qualidade.
+      </p>
+    </section>
+
+    
+<section class="contato" id="contato">
+  <div class="container">
+
+    <div class="contato-titulo">
+      <span>FALE COM A GENTE</span>
+      <h2>Venha conhecer a Urban Burger!</h2>
+      <p>
+        Estamos esperando você para uma
+        experiência cheia de sabor.
+      </p>
+    </div>
+
+    <div class="contato-grid">
+
+      <div class="contato-card">
+        <div class="contato-icone">📍</div>
+        <h3>Localização</h3>
+        <p>Rua Exemplo, 123</p>
+        <p>Centro - Cidade/SC</p>
+      </div>
+
+      <div class="contato-card">
+        <div class="contato-icone">🕒</div>
+        <h3>Funcionamento</h3>
+        <p>Terça a Domingo</p>
+        <p>18h às 23h</p>
+      </div>
+
+      <div class="contato-card">
+        <div class="contato-icone">📱</div>
+        <h3>Faça seu pedido</h3>
+        <p>Peça sem sair de casa!</p>
+        <a
+          href="#cardapio"
+          class="btn"
+        >
+          VER CARDÁPIO
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  </main>
+</body>
+</html>
